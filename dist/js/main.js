@@ -52,7 +52,7 @@ async function requestSearches() {
 
 search_button.addEventListener("click", () => {
   requestSearches().then((response) => {
-    console.log(response);
+    console.log("Hey anirudh");
   });
 });
 
