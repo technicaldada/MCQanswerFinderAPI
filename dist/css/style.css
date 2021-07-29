@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+body {
+  min-height: 100vh;
+}
+.navigation_bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navigation_bar .logo .logo_img {
+  height: 8rem;
+}
+.logo_name {
+  font-family: "Poiret One", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_bar li {
+  margin-right: 2rem;
+  list-style: none;
+  transition: all ease 0.5s;
+}
+.nav_bar li a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 1.5rem;
+}
+.nav_bar li:hover {
+  font-weight: 700;
+}
+.sidebar_container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: #fff;
+  transition: all ease 0.5s;
+}
+.sidebar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar li {
+  list-style: none;
+  padding: 0.8rem;
+}
+.sidebar li a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 1.5rem;
+}
+.close_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3rem;
+  font-size: 2rem;
+}
+.open_button {
+  display: none;
+  font-size: 2rem;
+}
+.get-app {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 0 0;
+}
+.getonplaystore {
+  height: 60px;
+}
+.main {
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_bar {
+  /* width: 90%; */
+  height: 100%;
+  padding: 1rem;
+  /* margin: 1rem; */
+}
+.vertical {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+.credits {
+  text-align: center;
+  width: 100%;
+}
+
+.gcse-search {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  flex-grow: 2;
+  height: 2rem;
+  padding: 0.5rem;
+  border: 3px dashed rgb(75, 75, 75);
+}
+#search_button {
+  width: 5rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+#show {
+  transform: translateX(0%);
+}
+#hide {
+  transform: translateX(-100%);
+}
+#appear {
+  display: flex;
+}
+#disappear {
+  display: none;
+}
+.result_container {
+  margin-bottom: 1rem;
+}
+.result {
+  border: 1px solid rgb(75, 75, 75);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.title_link {
+  text-decoration: none;
+  color: rgb(40, 95, 235);
+}
+.link {
+  text-decoration: none;
+  color: rgb(57, 194, 96);
+}
+.description {
+  font-size: 14px;
+}
+/* loader */
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 969px) {
+  .nav_bar {
+    display: none;
+  }
+  .open_button {
+    display: block;
+  }
+}
+@media (max-width: 764px) {
+  .main {
+    flex-direction: column;
+  }
+  .vertical {
+    display: none;
+  }
+  .horizontal {
+    display: flex;
+  }
+}
+@media (max-width: 536px) {
+  .logo_name {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 420px) {
+  .logo_name {
+    font-size: 1.5rem;
+  }
+}
