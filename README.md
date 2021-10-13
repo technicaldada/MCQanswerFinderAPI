@@ -1,2 +1,2 @@
-# MCQanswerFinderAPI
-This API is created for MCQAnswerfinder App.
+# MCQ Answer Finder API
+This API is created for MCQ Answer Finder App.
